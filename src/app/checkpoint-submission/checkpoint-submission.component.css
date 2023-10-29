@@ -1,0 +1,32 @@
+/* checkpointsubmissions.component.css */
+.checkpoints-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .checkpoint {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .checkpoint h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .custom-heading {
+    color: rgb(234, 45, 196);
+    font-size: 28px;
+    text-align: center;
+  }

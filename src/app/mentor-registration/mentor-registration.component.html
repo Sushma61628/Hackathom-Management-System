@@ -1,0 +1,49 @@
+ 
+<div class="mentor-registration-form">
+    <h2>Mentor Registration</h2>
+    <form (ngSubmit)="submitForm()">
+  
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="mentorData.name" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="mentorData.email" name="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" [(ngModel)]="mentorData.phone" name="phone" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="education">Education</label>
+        <input type="text" id="education" [(ngModel)]="mentorData.education" name="education" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" [(ngModel)]="mentorData.gender" name="gender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="skills">Top 3 Skills</label>
+        <input type="text" id="skills" [(ngModel)]="mentorData.skills" name="skills" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="projects">Previous Dealt Projects</label>
+        <textarea id="projects" [(ngModel)]="mentorData.projects" name="projects" required></textarea>
+      </div>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+   
+  

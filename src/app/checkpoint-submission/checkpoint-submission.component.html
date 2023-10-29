@@ -1,0 +1,17 @@
+ 
+
+<div class="checkpoints-container">
+    <h2 class="custom-heading"><i>Checkpoint Submissions</i></h2>
+    <ul *ngFor="let checkpoint of checkpoints" class="checkpoint">
+      <li>
+        <h3 class="custom-heading">{{ checkpoint.name }}</h3>
+        <i><p>Deadline: {{ checkpoint.deadline | date: 'short' }}</p>
+        <p>Submitted Teams on Time:</p></i>
+
+        <ul>
+          <li *ngFor="let team of checkpoint.submittedTeams">{{ team }}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  

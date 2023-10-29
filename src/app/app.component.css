@@ -1,0 +1,86 @@
+body {
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #95e982;
+    margin: 0;
+    padding: 0;
+  }
+ 
+.custom-heading {
+  color: red;
+  font-size: 28px;
+  text-align: center;
+}
+
+  .scroll-container {
+    width: 100%;      /* Set the width of the container */
+    overflow: hidden; /* Hide the content that overflows the container */
+  }
+  
+  .scroll-text {
+    white-space: nowrap; /* Prevent the text from wrapping to the next line */
+    overflow: hidden;    /* Hide the content that overflows the element */
+    animation: scroll 25s linear infinite;
+    color: #ee54c7; /* Apply a scrolling animation */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%); /* Start the text outside the container */
+    }
+    100% {
+      transform: translateX(-100%); /* Scroll the text to the left */
+    }
+  }
+  
+  
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #55b3d8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #ec8ade;
+  }
+  
+  .router-link1 {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .router-link2 {
+    background-color: #f44336; /* Red */
+  }
+  
+  .router-link3 {
+    background-color: #2196F3; /* Blue */
+  }
+  
+  .router-link4 {
+    background-color: #FF9800; /* Orange */
+  }
+  
+  .router-link5 {
+    background-color: #673AB7; /* Purple */
+  }
+  
+  .router-link6 {
+    background-color: #FF5722; /* Deep Orange */
+  }
+  
+  .router-link7 {
+    background-color: #795548; /* Brown */
+  }
+  

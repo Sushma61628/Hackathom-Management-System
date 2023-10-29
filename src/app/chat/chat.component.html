@@ -1,0 +1,15 @@
+ 
+<h2 class="custom-heading"><i>
+   Internal Discussions</i>
+</h2>
+<div class="chat-container">
+    <div class="chat-messages">
+      <div *ngFor="let message of messages" class="message">{{ message }}</div>
+    </div><br>
+    <div class="chat-input">
+      <input type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" placeholder="Type your message">
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+  

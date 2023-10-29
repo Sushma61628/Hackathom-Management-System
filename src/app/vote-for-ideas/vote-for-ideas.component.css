@@ -1,0 +1,34 @@
+/* vote-for-ideas.component.css */
+.ideas-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .idea {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    color: #121313;
+    font-size: 20px;
+  }
+  
+  .vote-count {
+    margin-right: 10px;
+       
+  }
+  
+  button:disabled {
+    background-color: #0ee93a;
+    cursor: not-allowed;
+  }
+  .button:enabled
+   {
+    background-color: #e9200e;
+    
+  }
+  .custom-heading {
+    color: red;
+    font-size: 28px;
+    text-align: center;
+  }

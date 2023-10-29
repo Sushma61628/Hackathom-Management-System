@@ -1,0 +1,57 @@
+ 
+<!-- team-registration.component.html -->
+<div class="registration-form">
+    <h2>Team Registration</h2>
+
+        <form #registrationForm="ngForm" (ngSubmit)="submitForm(registrationForm)">
+
+      <div class="form-group">
+        <label for="teamName">Team Name</label>
+        <input type="text" id="teamName" [(ngModel)]="formData.teamName" name="teamName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="teamLeaderName">Team Leader Name</label>
+        <input type="text" id="teamLeaderName" [(ngModel)]="formData.teamLeaderName" name="teamLeaderName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">emailId</label>
+        <input type="text" id="email" [(ngModel)]="formData.email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Phone">Phone Number</label>
+        <input type="text" id="Phone" [(ngModel)]="formData.Phone" name="Phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="projectName"> project Name</label>
+        <input type="text" id="projectName" [(ngModel)]="formData.projectName" name="projectName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mentorName">Mentor Name</label>
+        <input type="text" id="mentorName" [(ngModel)]="formData.mentorName" name="mentorName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="teamMemberNames">Team Member Names</label>
+        <input type="text" id="teamMemberNames" [(ngModel)]="formData.teamMemberNames" name="teamMemberNames" required>
+      </div>
+
+      <div class="form-group">
+        <label for="collegeName">College Name</label>
+        <input type="text" id="collegeName" [(ngModel)]="formData.collegeName" name="collegeName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ProblemStatement">Problem statement </label>
+        <input type="text" id="ProblemStatement" [(ngModel)]="formData.ProblemStatement" name="ProblemStatement" required>
+      </div>
+
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,22 @@
+ 
+<div class="jury-reviews-container">
+    <h2 class="custom-heading"><i>Jury Reviews</i>
+    </h2>
+    <div class="idea-input">
+      <input type="text" [(ngModel)]="newIdea" (keyup.enter)="submitIdea()" placeholder="Enter your idea">
+      <button (click)="submitIdea()">Submit Idea</button>
+    </div>
+    <div class="idea-list">
+      <div *ngFor="let idea of ideas; let i = index" class="idea">
+        <h3>Idea</h3>
+        <p>{{ idea.idea }}</p>
+        <h3>Reviews</h3>
+        <ul>
+          <li *ngFor="let review of idea.reviews">{{ review }}</li>
+        </ul>
+        <input type="text" [(ngModel)]="newReview" (keyup.enter)="submitReview(i, newReview)" placeholder="Write a review">
+        <button (click)="submitReview(i, newReview)">Submit Review</button>
+      </div>
+    </div>
+  </div>
+  

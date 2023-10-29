@@ -1,0 +1,21 @@
+ 
+.registration-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #6fb3d5;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
